@@ -16,7 +16,7 @@
         <h1 class="text-2xl">GREENDEN</h1>
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg  id="MenuIcon"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="h-6 w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -35,6 +35,23 @@
 
     </nav>
 
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+         <ul class="flex-col gap-10 items-center text-gray-600 flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index1.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index2.html">Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!--Header Section-->
     <section class="bg-green-100 p-4 md:10 flex justify-center">
@@ -163,6 +180,8 @@
         <p>The Standard chunk of lorem ipsum used since the 1500s is reprodused below  for those interest</p>
         <p>@ 2025 Greenden.com</p>
     </section>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
